@@ -198,7 +198,7 @@ function validateBaseRequest(req) {
 async function updateUsersDatabase(req, users) {
 	return new Promise((resolve, _) => {
 		// Write the new user list to the world's users.db file
-		writeFile(`${WORLD_PATH}/${req.body.world}/data/users.db`, users.map(x => JSON.stringify(x)).join('\n'), { encoding: 'utf8' }, resolve);
+		fs.writeFile(`${WORLD_PATH}/${req.body.world}/data/users.db`, users.map(x => JSON.stringify(x)).join('\n'), { encoding: 'utf8' }, resolve);
 	});
 }
 async function updateUsersServer(users, cookie) {
