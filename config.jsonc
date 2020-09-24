@@ -1,0 +1,13 @@
+{/* CONFIGURE SERVER HERE */
+	"server_title": "My Server", // The title that will display in the browser tab
+	"server_port": "8080", // The port that the node server runs on
+	"server_https": false, // Set to true if you are using HTTPS (if true, you must provide the SSL paths below)
+	/* For HTTPS, provide the paths to the SSL Key and Certificate */
+	"ssl_key": "/path/to/privkey.pem", // SSL Key for HTTPS
+	"ssl_cert": "/path/to/fullchain.pem", // SSL Certificate for HTTPS
+	/* FoundryVTT Data and Server info */
+	"fvtt_data": "/home/user/foundrydata", // This is the folder path to your FoundryVTT Data directory
+	"fvtt_host": "http://localhost", // This is the IP address for domain name of the Foundry VTT server
+	"fvtt_port": 30000 // This is the port the Foundry VTT server is listening on
+	/* Foundry's default `localhost` port is normally 30000, but if you cannot access it on `localhost`, then this will either be 80 (http) or 443 (https) */
+}

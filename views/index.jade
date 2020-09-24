@@ -1,0 +1,17 @@
+extends layout
+
+block head
+	link(rel='stylesheet', href='/css/index.css')
+	script(src="/js/index.js")
+
+block body
+	body(onload="onLoad()")
+		header(class="slide_photo" id="title")
+			div#server-status
+			a#manage(href="/manage") Manage Account
+			div#anvil
+			h1 Welcome To My Server
+			h2 Your Adventure Awaits!
+		main
+			p Your content can go here, along with links to your game servers
+		footer

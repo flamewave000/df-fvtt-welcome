@@ -1,0 +1,86 @@
+/* ----------------------------------------- */
+/*  Fonts
+/* ----------------------------------------- */
+
+@font-face {
+	font-family: 'Tiamat';
+	src: url("/fonts/tiamat.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: 'Signika';
+	src: url("/fonts/signika.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: 'Signika';
+	src: url("/fonts/signikaBold.woff2") format("woff2");
+	font-weight: bold;
+}
+
+td {
+	text-align: right;
+}
+
+select {
+	width: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden auto;
+	margin: 0;
+	background-image: url(/images/denim.png);
+	background-repeat: repeat;
+	background-size: auto;
+	font-family: "Signika", "Palatino Linotype", serif;
+	font-size: 15px;
+	color: #d9d7c8;
+}
+
+main {
+	width: fit-content;
+	height: fit-content;
+	margin: 0 auto;
+	padding: 2em;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	border-color: #000;
+	border-style: solid;
+	border-width: 4px;
+}
+
+footer {
+	width: fit-content;
+	height: fit-content;
+	margin: 0 auto;
+	padding: 2em;
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+	font-family: "Tiamat", "Signika", "serif";
+	font-weight: normal;
+	font-size: x-large;
+}
+
+a:visited {
+	color: #FFF;
+}
+
+h1 {
+	font-family: "Tiamat", "Signika", "serif";
+	text-align: center;
+	font-weight: normal;
+	font-size: 48pt;
+}
+
+.success {
+	color: seagreen;
+}
+
+.error {
+	color: tomato;
+}

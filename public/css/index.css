@@ -1,0 +1,177 @@
+/* ----------------------------------------- */
+/*  Fonts
+/* ----------------------------------------- */
+@font-face {
+	font-family: 'Signika';
+	src: url("/fonts/signika.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: 'Signika';
+	src: url("/fonts/signikaBold.woff2") format("woff2");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Tiamat';
+	src: url("/fonts/tiamat.woff2") format("woff2");
+}
+
+body {
+	background: #111;
+}
+
+h1 {
+	margin: 0 0;
+	font-family: "Tiamat", "Signika", "serif";
+	color: #ebe9d9;
+	font-size: 72px;
+	font-weight: lighter;
+	line-height: 100px;
+	text-align: center;
+	text-shadow: 1px 1px 10px #000, -1px 1px 10px #000, -1px -1px 10px #000, 1px -1px 10px #000, 1px 1px 10px #000, -1px 1px 10px #000, -1px -1px 10px #000, 1px -1px 10px #000;
+}
+
+h2 {
+	font-family: "Tiamat", "Signika", "serif";
+	color: #d9d7c8;
+	font-size: 48px;
+	line-height: 80px;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: 1px 1px 10px #000, -1px 1px 10px #000, -1px -1px 10px #000, 1px -1px 10px #000, 1px 1px 10px #000, -1px 1px 10px #000, -1px -1px 10px #000, 1px -1px 10px #000;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden auto;
+	margin: 0;
+	background-image: url(/images/denim.png);
+	background-repeat: repeat;
+	background-size: auto;
+	font-family: "Signika", "Palatino Linotype", serif;
+	font-size: 15px;
+	color: #d9d7c8;
+}
+
+header {
+	max-width: 1920px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	box-shadow: 0px 10px 10px #111;
+}
+
+.slide_photo {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	transition: all 3s ease;
+	-webkit-animation: fade 3s infinite;
+	-moz-animation: fade 3s infinite;
+	-o-animation: fade 3s infinite;
+	animation: fade 3s infinite;
+}
+
+main {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3em;
+	overflow: hidden;
+}
+
+footer {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3em;
+	overflow: hidden;
+}
+
+a {
+	color: #d9d7c8;
+}
+
+a:hover {
+	color: #d9d7c8;
+}
+
+a:active {
+	color: #d9d7c8;
+}
+
+a:visited {
+	color: #d9d7c8;
+}
+
+body::after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	z-index: -1;
+	content: url(/images/banner-0.jpg) url(/images/banner-1.jpg) url(/images/banner-2.jpg) url(/images/banner-3.jpg) url(/images/banner-4.jpg);
+}
+
+#anvil {
+	height: 75px;
+	width: 150px;
+	margin-left: 2em;
+	margin-bottom: 1em;
+	background-image: url(/images/fvtt-anvil.png);
+	background-size: contain;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+}
+
+#manage {
+	position: relative;
+	float: right;
+	margin-right: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: rgba(0, 0, 0, 0.75);
+	box-shadow: 0 0px 20px 15px #666, inset 0 0px 5px 5px #666;
+
+	font-family: "Tiamat", "Signika", "serif";
+	font-size: 24pt;
+	line-height: 80px;
+	position: relative;
+	top: 40%;
+}
+
+#manage:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	background-color: #666;
+	box-shadow: 0 10px 20px 10px #111;
+}
+
+#server-status {
+	font-family: "Tiamat", "Signika", "serif";
+	color: tomato;
+	text-align: center;
+	font-size: 24pt;
+	text-shadow: -1px 1px 10px #000, -1px -1px 10px #000, 1px -1px 10px #000;
+}
+
+#server-status a {
+	color: #40bf80;
+}
+
+#server-status a:hover {
+	color: #40bf80;
+}
+
+#server-status a:active {
+	color: #40bf80;
+}
+
+#server-status a:visited {
+	color: #40bf80;
+}

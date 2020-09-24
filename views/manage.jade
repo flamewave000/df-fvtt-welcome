@@ -1,0 +1,61 @@
+extends layout
+
+block head
+	link(rel='stylesheet', href='/css/manage.css')
+	script(src="/js/manage.js")
+
+block body
+	body(onload="onLoad()")
+		header
+			h1 User Management
+		main
+			table
+				tr
+					td
+						label(for="worlds") World:
+					td
+						select#worlds(name="world" onchange="loadUsers()")
+				tr
+					td
+						label(for="users") User:
+					td
+						select#users(name="user" onchange="updateNameField()")
+				tr
+					td
+						label(for="curpass") Current Password:
+					td
+						input#curpass(type="password" name="curpass")
+				tr(style="height:1em")
+				tr
+					td
+						label(for="name") User Name:
+					td
+						input#name(type="text", name="name")
+				tr
+					td
+					td
+						input(type="submit" value="Save User Name" onclick="saveUser()")
+				tr(style="height:1em")
+				tr
+					td
+						label(for="newpass") New Password:
+					td
+						input#newpass(type="password" name="newpass")
+				tr
+					td
+						label(for="conpass") Confirm Password:
+					td
+						input#conpass(type="password" name="conpass")
+				tr
+					td
+					td
+						input(type="submit" value="Save Password" onclick="savePass()")
+			div
+				h3#pass-success(class="success" style="display:none") Password Changed!
+				h3#pass-invalid(class="error" style="display:none") Current Password is Invalid!
+				h3#pass-no-match(class="error" style="display:none") Passwords Do Not Match!
+				h3#user-success(class="success" style="display:none") User name changed!
+				h3#user-same(class="error" style="display:none") User name is unchanged!
+				h3#user-exists(class="error" style="display:none") User name already exists!
+		footer
+			a(href="/") Go Back
