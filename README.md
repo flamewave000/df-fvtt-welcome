@@ -2,6 +2,15 @@
 
 A simple NodeJS server that hosts a FoundryVTT server welcome page and user management.
 
+## Main Welcome Page
+![Main Welcome Page](.assets/main-page.png)
+## User Management
+![User Management](.assets/user-management.png)
+## Server Status
+|||
+|-|-|
+|![User Management](.assets/server-available.png)|![User Management](.assets/server-unavailable.png)|
+
 ## Server Configuration
 
 The server settings can be found in the `config.jsonc` file.
