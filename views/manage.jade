@@ -22,9 +22,9 @@ block body
 						select#users(name="user" onchange="updateNameField()")
 				tr
 					td
-						label(for="curpass") Current Password:
+						label(for="curpass") Current Access Key:
 					td
-						input#curpass(type="password" name="curpass")
+						input#curpass(type="text" name="curpass")
 				tr(style="height:1em")
 				tr
 					td
@@ -38,14 +38,14 @@ block body
 				tr(style="height:1em")
 				tr
 					td
-						label(for="newpass") New Password:
+						label(for="newpass") New Access Key:
 					td
-						input#newpass(type="password" name="newpass")
+						input#newpass(type="text" name="newpass")
 				tr
 					td
-						label(for="conpass") Confirm Password:
+						label(for="conpass") Confirm Access Key:
 					td
-						input#conpass(type="password" name="conpass")
+						input#conpass(type="text" name="conpass")
 				tr
 					td
 					td
