@@ -4,7 +4,7 @@ A simple NodeJS server that hosts a FoundryVTT server welcome page and user mana
 
 ## Main Welcome Page
 ![Main Welcome Page](.assets/main-page.png)
-## User Management
+## ~User Management~ (No longer works in 0.7.X)
 ![User Management](.assets/user-management.png)
 ## Server Status
 |||
